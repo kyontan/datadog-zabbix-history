@@ -1,0 +1,23 @@
+init_config:
+#    threshold_sec_getting_old_metrics: 1200
+
+instances:
+    - zabbix_db_name: 'ZABBIX_DB_NAME'
+      zabbix_db_host: 'ZABBIX_DB_HOST'
+      zabbix_db_user: 'ZABBIX_DB_USER'
+      zabbix_db_password: 'ZABBIX_DB_PASSWORD'
+      zabbix_items:
+         - host: 'lovery_switch'
+           zabbix_item: 'Incoming Traffic'
+           datadog_item: 'net.traffic.incoming'
+#    - zabbix_db_name: 'SECOND_ZABBIX_DB_NAME'
+#      zabbix_db_host: 'SECOND_ZABBIX_DB_HOST'
+#      zabbix_db_user: 'SECOND_ZABBIX_DB_USER'
+#      zabbix_db_password: 'SECOND_ZABBIX_DB_PASSWORD'
+#      zabbix_items:
+#          - host: 'my_server'
+#            zabbix_item: 'Disk Usage'
+#            datadog_item: 'disk.used'
+#          - host: 'my_little_server'
+#            zabbix_item: 'Load Average'
+#            datadog_item: 'cpu.load.1'
